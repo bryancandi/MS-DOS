@@ -10,4 +10,4 @@ Media Vision Pro Audio Spectrum 16\
 Windows 95C (OSR 2.5)
 
 *Note:*\
-*MSDOS.SYS: `BootGUI=0` (Default: 1) This is a crucial line to use a DOS-only boot menu option.*
+*MSDOS.SYS: `BootGUI=0` (Default: 1) This is a crucial change if including a DOS-only boot menu option.*
