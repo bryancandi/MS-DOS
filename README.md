@@ -5,7 +5,7 @@
 80486 DX2 @ 66 MHz\
 20MB RAM\
 WD 80GB HDD\
-Trident SVGA 1MB\
+Trident TVGA 8900D 1MB\
 Media Vision Pro Audio Spectrum 16\
 Windows 95C (OSR 2.5)
 
