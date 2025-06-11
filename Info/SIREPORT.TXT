@@ -1,0 +1,309 @@
+                               System Information
+                              Norton Utilities 8.0
+                                  System Report
+                          Tuesday, June 10, 2025 5:57pm
+                                 Bryan's ACT 486
+
+                             **********************
+                             *   System Summary   *
+                             **********************
+
+              --------------------- Computer ---------------------
+                Computer Name: IBM AT or compatible                          
+                Built-in BIOS: AMI, Sunday, April  4, 1993
+               Main Processor: 80486DX, 67 MHz
+            Math Co-Processor: (Built-In)
+                Video Adapter: VESA-compatible VGA, Secondary: None
+                   Mouse Type: Serial Mouse, Version 9.01
+
+                --------------------- Disks ---------------------
+              Hard Disks: 4023M
+            Floppy Disks: 1.44M, 1.2M
+
+               --------------------- Memory ---------------------
+                  DOS Memory:    626K
+             Extended Memory: 19,712K
+             Expanded Memory: 20,000K
+
+             --------------------- Other Info ---------------------
+                    Bus Type: ISA (PC/AT)
+                Serial Ports: 2
+              Parallel Ports: 1
+               Keyboard Type: 101-Key
+            Operating System: DOS 7.10
+          
+          
+
+
+
+                              *********************
+                              *   Video Summary   *
+                              *********************
+
+               --------------------- Display ---------------------
+           Video Display Adapter: VESA-compatible VGA, Secondary: None
+                    Monitor Type: Analog Color
+              Current Video Mode: 3 (Color, 80x25)
+
+              --------------------- Character ---------------------
+               Maximum Scan Lines: 400
+                   Character Size: 9 x 16
+             CGA Cursor Emulation: Enabled
+
+               --------------------- Memory ---------------------
+                     Video Memory: 256K or more
+            Video Segment Address: B800 (hex)
+                  Video Page Size: 4,096 Bytes
+
+           
+
+
+                           ***************************
+                           *   Hardware Interrupts   *
+                           ***************************
+
+            Number   Address   Name                       Owner
+                                                                       
+           IRQ 00  03C4:2A9F  Timer Output 0             MOUSE                
+           IRQ 01  DA20:0028  Keyboard                   UMB                  
+           IRQ 02  DA20:003A  [Cascade]                  UMB                  
+           IRQ 03  08A3:0096  COM2                       MOUSE                
+           IRQ 04  DA20:006A  COM1                       UMB                  
+           IRQ 05  DA20:0082  LPT2                       UMB                  
+           IRQ 06  DA20:009A  Floppy Disk                UMB                  
+           IRQ 07  0070:0465  LPT1                       DOS                  
+           IRQ 08  DA20:0035  Realtime Clock             UMB                  
+           IRQ 09  F000:EED2  Reserved                   BIOS                 
+           IRQ 10  DA20:00B2  Reserved                   UMB                  
+           IRQ 11  DA20:00CA  Reserved                   UMB                  
+           IRQ 12  DA20:00E2  Reserved                   UMB                  
+           IRQ 13  F000:EEDB  Coprocessor                BIOS                 
+           IRQ 14  DA20:00FA  Fixed Disk                 UMB                  
+           IRQ 15  F000:9219  Reserved                   BIOS                 
+
+
+                               *******************
+                               *   CMOS Values   *
+                               *******************
+                                         
+             --------------------- Hard Disks ---------------------
+              Primary: type 47
+            Secondary: None
+
+           
+            --------------------- Floppy Disks ---------------------
+              Primary: 1.44M, 3 1/2"
+            Secondary: 1.2M, 5 1/4"
+
+           
+          --------------------- Installed Memory ---------------------
+                Base:   640 KBytes
+            Extended: 19,712 KBytes
+
+           
+           
+             --------------------- CMOS Status ---------------------
+                     CMOS Battery: Operational
+                        CMOS Time: Valid
+           
+            Fixed Disk Controller: OK
+                Configured Memory: Correct
+             Configured Equipment: Correct
+           
+                         Checksum: Correct
+
+           
+           
+           
+
+
+                              ********************
+                              *   Disk Summary   *
+                              ********************
+
+           Drive   Type        Size            Default Directory
+          -------------------------------------------------------------
+           A:  1.44M, 3 1/2"  1.44M                                            
+           B:  1.2M, 5 1/4"   1.2M                                             
+           C:  Device Driven  ?      C:\DOSBENCH\MARKS\SI8                     
+           D:  Device Driven  ?      D:\                                       
+           E:  CD ROM                E:\                                       
+           F:  Available                                                       
+           G:  Available                                                       
+           H:  Available                                                       
+           I:  Available                                                       
+           J:  Available                                                       
+           K:  Available                                                       
+           L:  Available                                                       
+           M:  Available                                                       
+           N:  Available                                                       
+           O:  Available                                                       
+           P:  Available                                                       
+           Q:  Available                                                       
+           R:  Available                                                       
+           S:  Available                                                       
+           T:  Available                                                       
+           U:  Available                                                       
+           V:  Available                                                       
+           W:  Available                                                       
+           X:  Available                                                       
+           Y:  Available                                                       
+           Z:  Available                                                       
+
+
+                             **********************
+                             *   Memory Summary   *
+                             **********************
+
+              --------------------- DOS Usage ---------------------
+             DOS reports 626 K-bytes of memory:
+                 66 K-bytes used by DOS and resident programs
+                560 K-bytes available for application programs
+
+               --------------------- Overall ---------------------
+             A search for active memory finds:
+                640 K-bytes main memory      (at hex 00000-0A000)
+                 32 K-bytes display memory   (at hex 0B800-0C000)
+                 64 K-bytes extra memory     (at hex 0D000-0E000)
+             19,712 K-bytes extended memory  (at hex 10000-144000)
+             20,000 K-bytes expanded memory
+
+         ------ ROM BIOS Extensions are located at these segments ------
+             C000 
+
+                           ***************************
+                           *  Expanded Memory (EMS)  *
+                           ***************************
+
+                   EMM Version:  LIM 4.0
+           
+           
+              Total EMS Memory:    20,000K
+            Reserved by System:  -   368K
+                     Allocated:  -   272K
+                                 --------
+                     Available:  = 19,360K
+           
+                    Page Frame:  E000
+                Mappable Pages:  39
+           
+                             Total    Free
+                   Handles:    64       63
+                 Raw Pages:  1,250     1,210
+            Standard Pages:  1,250     1,210
+           
+          Handle  Pages   Size    Name
+            0       23     368K   System  
+
+
+                           ***************************
+                           *  Extended Memory (XMS)  *
+                           ***************************
+
+              Total XMS Memory:    19,648K
+                     Allocated:  -   528K
+                                 --------
+                     Available:  = 19,120K
+           
+                   XMS Version:  3.00
+               Driver Revision:  3.5F
+             Available Handles:  46
+           
+              High Memory Area:  Allocated
+                      A20 Line:  Enabled 
+           
+                    UMB Server:   DOS
+                Available UMBs:     36K
+              Largest Free UMB:     22K
+
+          Handle   Block       Size  Locks
+          54,398       0         4K    1  
+          54,408       1       524K    0  
+
+
+                            *************************
+                            *   DOS Memory Blocks   *
+                            *************************
+
+           020E    1,152  HIMEM                  Device Driver                
+           0257    4,304  EMM386                 Device Driver                
+           0365      544  Unknown owner          Unknown                      
+           0388      512  DOS                    File Buffers                 
+           03A9       64  DOS                    DOS System Area              
+           03AE       64                         Free Memory                  
+           03B3   24,576  MOUSE                  Program                      
+           09B4   28,016  MSCDEX                 Program                      
+           108C       80  COMMAND                Data                         
+           1092  574,144                         Free Memory                  
+           9CBF  182,720  DOS                    DOS System Area              
+           C95C   23,056                         Free Memory                  
+           CEFF    4,096  Unknown owner          Data                         
+           D000   65,520  UMB                    Data                         
+
+
+                              ********************
+                              *   TSR Programs   *
+                              ********************
+
+          Address   Size  Owner                Hooked Interrupt Vectors
+          -------------------------------------------------------------------
+           03B4   24,576  MOUSE                08 0B 10 33 DC DE DF E6 EE ... 
+           09B5   28,016  MSCDEX               2F E3 F2 F7 
+
+
+                             **********************
+                             *   Device Drivers   *
+                             **********************
+
+             Address   Name      Description
+          -------------------------------------------------------------
+           00C9:0048  NUL       NUL Device                                     
+           D4D8:0000  SETVERXX  MSDOS Version Number Driver                    
+           D425:0000  IFS$HLP$  WfW VFAT driver                                
+           D13D:0000  MVPROAS   Unrecognized Device                            
+           D003:0000  MSCD001   Unrecognized Device                            
+           0258:0000  EMMXXXX0  Expanded Memory Manager (EMS)                  
+           020F:0000  XMSXXXX0  Extended Memory Manager (XMS)                  
+           0071:0006  CON       Console Keyboard/Screen                        
+           0072:0008  AUX       First Serial Port                              
+           0073:000A  PRN       First Parallel Printer                         
+           0074:000C  CLOCK$    System Clock Interface                         
+           0075:000E  A: - D:   DOS Supported Drives                           
+           0076:000A  COM1      First Serial Port                              
+           0077:000C  LPT1      First Parallel Printer                         
+           0078:000E  LPT2      Second Parallel Printer                        
+           007A:0000  LPT3      Third Parallel Printer                         
+           0082:000D  CONFIG$   Unrecognized Device                            
+           007B:0008  COM2      Second Serial Port                             
+           007C:000A  COM3      Third Serial Port                              
+           007D:000C  COM4      Fourth Serial Port                             
+
+
+                                *****************
+                                *   CPU Speed   *
+                                *****************
+
+This       |
+Computer   +**********  98.9
+           | 
+INTEL      |
+Pentium-66 +*********************  211.4
+           | 
+INTEL      |
+486DX-33   +*******  71.2
+           | 
+INTEL      |
+386DX-33   +****  35.9
+           | 
+           +----+----+----+----+----+----+----+----+----+----+----+---
+                50   100  150  200  250  300  350  400  450  500  550
+                                      Computing Index
+                                        
+                         Main Processor: 80486DX, 67 MHz
+                                         
+
+
+                        *********************************
+                        *   Overall Performance Index   *
+                        *********************************
+
