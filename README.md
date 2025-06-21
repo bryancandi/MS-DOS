@@ -1,4 +1,4 @@
-# MS-DOS Config Files
+# MS-DOS Config & Batch Files
 
 
 ### Machine Specs:
