@@ -3,25 +3,25 @@
 :MENU_MAIN
 CLS
 ECHO.
-ECHO =======================
-ECHO        MAIN MENU
-ECHO =======================
+ECHO  =======================
+ECHO         MAIN MENU
+ECHO  =======================
 ECHO.
-ECHO A) DOOM
-ECHO B) DOOM II
-ECHO C) FASTDOOM
-ECHO D) Quake
-ECHO E) Duke Nukem 1
-ECHO F) Duke Nukem 2
-ECHO G) Duke Nukem 3D
-ECHO H) Dark Forces
-ECHO I) SC2000
-ECHO J) Lemmings
-ECHO K) Oregon Trail
-ECHO S) Shareware
-ECHO R) Return to DOS Prompt
+ECHO    A) DOOM
+ECHO    B) DOOM II
+ECHO    C) FASTDOOM
+ECHO    D) Quake
+ECHO  + E) Duke Nukem 1
+ECHO    F) Duke Nukem 2
+ECHO    G) Duke Nukem 3D
+ECHO    H) Dark Forces
+ECHO    I) SC2000
+ECHO  + J) Lemmings
+ECHO    K) Oregon Trail
+ECHO  + S) Shareware
+ECHO    R) Return to DOS Prompt
 ECHO.
-CHOICE /C:ABCDEFGHIJKSR /N "Make a selection: "
+CHOICE /C:ABCDEFGHIJKSR /N " Make a selection: "
 
 IF ERRORLEVEL 13 GOTO END
 IF ERRORLEVEL 12 GOTO MENU_SHARE
@@ -40,16 +40,16 @@ IF ERRORLEVEL 1 GOTO DOOM_SE
 :MENU_DUKE1
 CLS
 ECHO.
-ECHO =======================
-ECHO      DUKE NUKEM 1
-ECHO =======================
+ECHO  =======================
+ECHO       DUKE NUKEM 1
+ECHO  =======================
 ECHO.
-ECHO A) Episode 1
-ECHO B) Episode 2
-ECHO C) Episode 3
-ECHO R) Return to Main Menu
+ECHO    A) Episode 1
+ECHO    B) Episode 2
+ECHO    C) Episode 3
+ECHO    R) Return to Main Menu
 ECHO.
-CHOICE /C:ABCR /N "Make a selection: "
+CHOICE /C:ABCR /N " Make a selection: "
 
 IF ERRORLEVEL 4 GOTO MENU_MAIN
 IF ERRORLEVEL 3 GOTO DUKE1_EP3
@@ -59,15 +59,15 @@ IF ERRORLEVEL 1 GOTO DUKE1_EP1
 :MENU_LEMM
 CLS
 ECHO.
-ECHO =======================
-ECHO        LEMMINGS
-ECHO =======================
+ECHO  =======================
+ECHO         LEMMINGS
+ECHO  =======================
 ECHO.
-ECHO A) Lemmings
-ECHO B) Oh No! More Lemmings
-ECHO R) Return to Main Menu
+ECHO    A) Lemmings
+ECHO    B) Oh No! More Lemmings
+ECHO    R) Return to Main Menu
 ECHO.
-CHOICE /C:ABR /N "Make a selection: "
+CHOICE /C:ABR /N " Make a selection: "
 
 IF ERRORLEVEL 3 GOTO MENU_MAIN
 IF ERRORLEVEL 2 GOTO LEMM_OHNO
@@ -76,16 +76,16 @@ IF ERRORLEVEL 1 GOTO LEMMINGS
 :MENU_SHARE
 CLS
 ECHO.
-ECHO =======================
-ECHO        SHAREWARE
-ECHO =======================
+ECHO  =======================
+ECHO         SHAREWARE
+ECHO  =======================
 ECHO.
-ECHO A) Raptor
-ECHO B) Heretic
-ECHO C) Wacky Wheels
-ECHO R) Return to Main Menu
+ECHO    A) Raptor
+ECHO    B) Heretic
+ECHO    C) Wacky Wheels
+ECHO    R) Return to Main Menu
 ECHO.
-CHOICE /C:ABCR /N "Make a selection: "
+CHOICE /C:ABCR /N " Make a selection: "
 
 IF ERRORLEVEL 4 GOTO MENU_MAIN
 IF ERRORLEVEL 3 GOTO WWHEELS
