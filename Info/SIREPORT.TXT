@@ -1,8 +1,8 @@
                                System Information
                               Norton Utilities 8.0
                                   System Report
-                          Tuesday, June 10, 2025 5:57pm
-                                 Bryan's ACT 486
+                         Thursday, July  3, 2025 8:19am
+                               Bryan's ACT 486 DX2
 
                              **********************
                              *   System Summary   *
@@ -14,7 +14,7 @@
                Main Processor: 80486DX, 67 MHz
             Math Co-Processor: (Built-In)
                 Video Adapter: VESA-compatible VGA, Secondary: None
-                   Mouse Type: Serial Mouse, Version 9.01
+                   Mouse Type: Serial Mouse, Version 11.11
 
                 --------------------- Disks ---------------------
               Hard Disks: 4023M
@@ -28,7 +28,7 @@
              --------------------- Other Info ---------------------
                     Bus Type: ISA (PC/AT)
                 Serial Ports: 2
-              Parallel Ports: 1
+              Parallel Ports: 3
                Keyboard Type: 101-Key
             Operating System: DOS 7.10
           
@@ -64,22 +64,286 @@
 
             Number   Address   Name                       Owner
                                                                        
-           IRQ 00  03C4:2A9F  Timer Output 0             MOUSE                
-           IRQ 01  DA20:0028  Keyboard                   UMB                  
-           IRQ 02  DA20:003A  [Cascade]                  UMB                  
-           IRQ 03  08A3:0096  COM2                       MOUSE                
-           IRQ 04  DA20:006A  COM1                       UMB                  
-           IRQ 05  DA20:0082  LPT2                       UMB                  
-           IRQ 06  DA20:009A  Floppy Disk                UMB                  
-           IRQ 07  0070:0465  LPT1                       DOS                  
-           IRQ 08  DA20:0035  Realtime Clock             UMB                  
+           IRQ 00  045B:2C7F  Timer Output 0             DOS System Area      
+           IRQ 01  D39C:0028  Keyboard                   DOS System Area      
+           IRQ 02  D39C:003A  [Cascade]                  DOS System Area      
+           IRQ 03  D39C:0052  COM2                       DOS System Area      
+           IRQ 04  0958:0114  COM1                       DOS System Area      
+           IRQ 05  D39C:0082  LPT2                       DOS System Area      
+           IRQ 06  D39C:009A  Floppy Disk                DOS System Area      
+           IRQ 07  0070:0465  LPT1                       Unknown              
+           IRQ 08  D39C:0035  Realtime Clock             DOS System Area      
            IRQ 09  F000:EED2  Reserved                   BIOS                 
-           IRQ 10  DA20:00B2  Reserved                   UMB                  
-           IRQ 11  DA20:00CA  Reserved                   UMB                  
-           IRQ 12  DA20:00E2  Reserved                   UMB                  
+           IRQ 10  D39C:00B2  Reserved                   DOS System Area      
+           IRQ 11  D39C:00CA  Reserved                   DOS System Area      
+           IRQ 12  D39C:00E2  Reserved                   DOS System Area      
            IRQ 13  F000:EEDB  Coprocessor                BIOS                 
-           IRQ 14  DA20:00FA  Fixed Disk                 UMB                  
+           IRQ 14  D39C:00FA  Fixed Disk                 DOS System Area      
            IRQ 15  F000:9219  Reserved                   BIOS                 
+
+
+                           ***************************
+                           *   Software Interrupts   *
+                           ***************************
+
+            #   Interrupt Name                   Address   Owner
+                                                                       
+           00  Divide by Zero                  00C9:0F9E  DOS System Area     
+           01  Single Step                     0070:0465  Unknown             
+           02  Nonmaskable                     0AA2:26D2  DOS System Area     
+           03  Breakpoint                      0070:0465  Unknown             
+           04  Overflow                        0070:0465  Unknown             
+           05  Print Screen                    F000:FF54  BIOS                
+           06  Invalid Opcode                  F000:EB43  BIOS                
+           07  Reserved                        F000:EAEB  BIOS                
+           08  IRQ0 - System Timer             045B:2C7F  DOS System Area     
+           09  IRQ1 - Keyboard                 D39C:0028  DOS System Area     
+           0A  IRQ2 - Reserved                 D39C:003A  DOS System Area     
+           0B  IRQ3 - COM2                     D39C:0052  DOS System Area     
+           0C  IRQ4 - COM1                     0958:0114  DOS System Area     
+           0D  IRQ5 - Reserved                 D39C:0082  DOS System Area     
+           0E  IRQ6 - Diskette                 D39C:009A  DOS System Area     
+           0F  IRQ7 - Printer                  0070:0465  Unknown             
+           10  Video                           045B:25EB  DOS System Area     
+           11  Equipment Determination         F000:F84D  BIOS                
+           12  Memory Size Determination       F000:F841  BIOS                
+           13  Fixed Disk/Diskette             03C5:042A  DOS System Area     
+           14  Asynchronous Communication      F000:E739  BIOS                
+           15  System Services                 0258:053A  EMM386              
+           16  Keyboard                        0070:042D  Unknown             
+           17  Printer                         CD80:0A28  DOS System Area     
+           18  Resident BASIC                  F000:E000  BIOS                
+           19  Bootstrap Loader                03AA:002F  DOS System Area     
+           1A  Real-Time Clock Services        F000:FE6E  BIOS                
+           1B  Keyboard Break                  CD80:0604  DOS System Area     
+           1C  User Timer Tick                 F000:FF53  BIOS                
+           1D  Video Parameters                F000:F0A4  BIOS                
+           1E  Diskette Parameters             0000:0522  Device Driver       
+           1F  Video Graphics Characters       C000:5494  DOS System Area     
+           20  Program Terminate               00C9:0FA8  DOS System Area     
+           21  General DOS Functions           03C5:042F  DOS System Area     
+           22  Terminate Address               D61D:0314  COMMAND             
+           23  Ctrl+Break Handler Address      0AA2:26BA  DOS System Area     
+           24  Critical Error Handler          D61D:0178  COMMAND             
+           25  Absolute Disk Read              00C9:0FBC  DOS System Area     
+           26  Absolute Disk Write             00C9:0FC6  DOS System Area     
+           27  Terminate and Stay Resident     00C9:0FD0  DOS System Area     
+           28  DOS Idle                        00C9:106C  DOS System Area     
+           29  DOS Internal - FAST PUTCHAR     0070:0466  Unknown             
+           2A  Microsoft Networks              00C9:106C  DOS System Area     
+           2B  Reserved for DOS                00C9:106C  DOS System Area     
+           2C  Reserved for DOS                00C9:106C  DOS System Area     
+           2D  Reserved for DOS                00C9:106C  DOS System Area     
+           2E  DOS - Execute Command           D61D:0162  COMMAND             
+           2F  Multiplex (Process Interface)   03C5:03F6  DOS System Area     
+           30  Reserved for DOS                C90F:E4EA  COMMAND             
+           31  Reserved for DOS                F000:EA00  BIOS                
+           32  Reserved for DOS                00C9:106C  DOS System Area     
+           33  Microsoft Mouse Driver          045B:09EA  DOS System Area     
+           34  Reserved for DOS                0AA2:0833  DOS System Area     
+           35  Reserved for DOS                0AA2:0833  DOS System Area     
+           36  Reserved for DOS                0AA2:0833  DOS System Area     
+           37  Reserved for DOS                0AA2:0833  DOS System Area     
+           38  Reserved for DOS                0AA2:0833  DOS System Area     
+          e39  Reserved for DOS                0AA2:0833  DOS System Area     
+           3A  Reserved for DOS                0AA2:0833  DOS System Area     
+           3B  Reserved for DOS                0AA2:0833  DOS System Area     
+           3C  Reserved for DOS                0AA2:07FE  DOS System Area     
+           3D  Reserved for DOS                0AA2:082B  DOS System Area     
+           3E  Reserved for DOS                00C9:106C  DOS System Area     
+           3F  Overlay Manager                 00C9:106C  DOS System Area     
+           40  Diskette BIOS Revector          F000:EC59  BIOS                
+           41  Fixed Disk Parameters           9D43:026B  DOS System Area     
+           42  Relocated Video Handler         F000:F065  BIOS                
+           43  EGA/VGA User Font Table         C000:5094  DOS System Area     
+           44  Novell Netware API              F000:EA97  BIOS                
+           45  Reserved                        F000:EA97  BIOS                
+           46  Fixed Disk Parameters           F000:E401  BIOS                
+           47  Reserved                        F000:EA97  BIOS                
+           48  Reserved                        F000:EA97  BIOS                
+           49  Reserved                        F000:EA97  BIOS                
+           4A  User Alarm                      F000:EA97  BIOS                
+           4B  Reserved                        C801:0F10  DOS System Area     
+           4C  Reserved                        F000:EA97  BIOS                
+           4D  Reserved                        F000:EA97  BIOS                
+           4E  Reserved                        F000:EA97  BIOS                
+           4F  Reserved                        0070:04FC  Unknown             
+           50  Reserved                        F000:EA97  BIOS                
+           51  Reserved                        F000:EA97  BIOS                
+           52  Reserved                        F000:EA97  BIOS                
+           53  Reserved                        F000:EA97  BIOS                
+           54  Reserved                        F000:EA97  BIOS                
+           55  Reserved                        F000:EA97  BIOS                
+           56  Reserved                        F000:EA97  BIOS                
+           57  Reserved                        F000:EA97  BIOS                
+           58  Reserved                        F000:EA97  BIOS                
+           59  Reserved                        F000:EA97  BIOS                
+           5A  Reserved                        F000:EA97  BIOS                
+           5B  Reserved                        F000:EA97  BIOS                
+           5C  Reserved                        F000:EA97  BIOS                
+           5D  Reserved                        F000:EA97  BIOS                
+           5E  Reserved                        F000:EA97  BIOS                
+           5F  Reserved                        F000:EA97  BIOS                
+           60  Reserved for User Programs      0000:0000  Unused              
+           61  Reserved for User Programs      0000:0000  Unused              
+           62  Reserved for User Programs      0000:0000  Unused              
+           63  Reserved for User Programs      0000:0000  Unused              
+           64  Novell Netware API              0000:0000  Unused              
+           65  Reserved for User Programs      0000:0000  Unused              
+           66  Reserved for User Programs      0000:0000  Unused              
+           67  Expanded Memory                 0258:0270  EMM386              
+           68  Reserved                        F000:EA97  BIOS                
+           69  Reserved                        F000:EA97  BIOS                
+           6A  Reserved                        F000:EA97  BIOS                
+           6B  Reserved                        F000:EA97  BIOS                
+           6C  Reserved                        F000:EA97  BIOS                
+           6D  Reserved for VGA                C000:13BC  DOS System Area     
+           6E  Reserved                        F000:EA97  BIOS                
+           6F  Reserved                        F000:EA97  BIOS                
+           70  IRQ8 - Real-Time Clock          D39C:0035  DOS System Area     
+           71  IRQ9  - Reserved                F000:EED2  BIOS                
+           72  IRQ10 - Reserved                D39C:00B2  DOS System Area     
+           73  IRQ11 - Reserved                D39C:00CA  DOS System Area     
+           74  IRQ12 - Reserved                D39C:00E2  DOS System Area     
+           75  IRQ13 - Redirect to NMI         F000:EEDB  BIOS                
+           76  IRQ14 - Fixed Disk              D39C:00FA  DOS System Area     
+           77  IRQ15 - Reserved                F000:9219  BIOS                
+           78  Reserved                        0000:0000  Unused              
+           79  Reserved                        0000:0000  Unused              
+           7A  Novell Netware API              0000:0000  Unused              
+           7B  Reserved                        0000:0000  Unused              
+           7C  Reserved                        0000:0000  Unused              
+           7D  Reserved                        0000:0000  Unused              
+           7E  Reserved                        0000:0000  Unused              
+           7F  Reserved                        0000:0000  Unused              
+           80  Reserved for BASIC              0000:0000  Unused              
+           81  Reserved for BASIC              0000:0000  Unused              
+           82  Reserved for BASIC              0000:0000  Unused              
+           83  Reserved for BASIC              0000:0000  Unused              
+           84  Reserved for BASIC              0000:0000  Unused              
+           85  Reserved for BASIC              0000:0000  Unused              
+           86  Reserved for BASIC interpreter  0000:0000  Unused              
+           87  Reserved for BASIC interpreter  0000:0000  Unused              
+           88  Reserved for BASIC interpreter  0000:0000  Unused              
+           89  Reserved for BASIC interpreter  0000:0000  Unused              
+           8A  Reserved for BASIC interpreter  0000:0000  Unused              
+           8B  Reserved for BASIC interpreter  0000:0000  Unused              
+           8C  Reserved for BASIC interpreter  0000:0000  Unused              
+           8D  Reserved for BASIC interpreter  0000:0000  Unused              
+           8E  Reserved for BASIC interpreter  0000:0000  Unused              
+           8F  Reserved for BASIC interpreter  0000:0000  Unused              
+           90  Reserved for BASIC interpreter  0000:0000  Unused              
+           91  Reserved for BASIC interpreter  0000:0000  Unused              
+           92  Reserved for BASIC interpreter  0000:0000  Unused              
+           93  Reserved for BASIC interpreter  0000:0000  Unused              
+           94  Reserved for BASIC interpreter  0000:0000  Unused              
+           95  Reserved for BASIC interpreter  0000:0000  Unused              
+           96  Reserved for BASIC interpreter  0000:0000  Unused              
+           97  Reserved for BASIC interpreter  0000:0000  Unused              
+           98  Reserved for BASIC interpreter  0000:0000  Unused              
+           99  Reserved for BASIC interpreter  0000:0000  Unused              
+           9A  Reserved for BASIC interpreter  0000:0000  Unused              
+           9B  Reserved for BASIC interpreter  0000:0000  Unused              
+           9C  Reserved for BASIC interpreter  0000:0000  Unused              
+           9D  Reserved for BASIC interpreter  0000:0000  Unused              
+           9E  Reserved for BASIC interpreter  0000:0000  Unused              
+           9F  Reserved for BASIC interpreter  0000:0000  Unused              
+           A0  Reserved for BASIC interpreter  0000:0000  Unused              
+           A1  Reserved for BASIC interpreter  0000:0000  Unused              
+           A2  Reserved for BASIC interpreter  0000:0000  Unused              
+           A3  Reserved for BASIC interpreter  0000:0000  Unused              
+           A4  Reserved for BASIC interpreter  0000:0000  Unused              
+           A5  Reserved for BASIC interpreter  0000:0000  Unused              
+           A6  Reserved for BASIC interpreter  0000:0000  Unused              
+           A7  Reserved for BASIC interpreter  0000:0000  Unused              
+           A8  Reserved for BASIC interpreter  0000:0000  Unused              
+           A9  Reserved for BASIC interpreter  0000:0000  Unused              
+           AA  Reserved for BASIC interpreter  0000:0000  Unused              
+           AB  Reserved for BASIC interpreter  0000:0000  Unused              
+           AC  Reserved for BASIC interpreter  0000:0000  Unused              
+           AD  Reserved for BASIC interpreter  0000:0000  Unused              
+           AE  Reserved for BASIC interpreter  0000:0000  Unused              
+           AF  Reserved for BASIC interpreter  0000:0000  Unused              
+           B0  Reserved for BASIC interpreter  0000:0000  Unused              
+           B1  Reserved for BASIC interpreter  0000:0000  Unused              
+           B2  Reserved for BASIC interpreter  0000:0000  Unused              
+           B3  Reserved for BASIC interpreter  0000:0000  Unused              
+           B4  Reserved for BASIC interpreter  0000:0000  Unused              
+           B5  Reserved for BASIC interpreter  0000:0000  Unused              
+           B6  Reserved for BASIC interpreter  0000:0000  Unused              
+           B7  Reserved for BASIC interpreter  0000:0000  Unused              
+           B8  Reserved for BASIC interpreter  0000:0000  Unused              
+           B9  Reserved for BASIC interpreter  0000:0000  Unused              
+           BA  Reserved for BASIC interpreter  0000:0000  Unused              
+           BB  Reserved for BASIC interpreter  0000:0000  Unused              
+           BC  Reserved for BASIC interpreter  0000:0000  Unused              
+           BD  Reserved for BASIC interpreter  0000:0000  Unused              
+           BE  Reserved for BASIC interpreter  0000:0000  Unused              
+           BF  Reserved for BASIC interpreter  0000:0000  Unused              
+           C0  Reserved for BASIC interpreter  0000:0000  Unused              
+           C1  Reserved for BASIC interpreter  0000:0000  Unused              
+           C2  Reserved for BASIC interpreter  0000:0000  Unused              
+           C3  Reserved for BASIC interpreter  0000:0000  Unused              
+           C4  Reserved for BASIC interpreter  0000:0000  Unused              
+           C5  Reserved for BASIC interpreter  0000:0000  Unused              
+           C6  Reserved for BASIC interpreter  0000:0000  Unused              
+           C7  Reserved for BASIC interpreter  0000:0000  Unused              
+           C8  Reserved for BASIC interpreter  0000:0000  Unused              
+           C9  Reserved for BASIC interpreter  0000:0000  Unused              
+           CA  Reserved for BASIC interpreter  0000:0000  Unused              
+           CB  Reserved for BASIC interpreter  0000:0000  Unused              
+           CC  Reserved for BASIC interpreter  0000:0000  Unused              
+           CD  Reserved for BASIC interpreter  0000:0000  Unused              
+           CE  Reserved for BASIC interpreter  0000:0000  Unused              
+           CF  Reserved for BASIC interpreter  0000:0000  Unused              
+           D0  Reserved for BASIC interpreter  0000:0000  Unused              
+           D1  Reserved for BASIC interpreter  0000:0000  Unused              
+           D2  Reserved for BASIC interpreter  0000:0000  Unused              
+           D3  Reserved for BASIC interpreter  0000:0000  Unused              
+           D4  Reserved for BASIC interpreter  0000:0000  Unused              
+           D5  Reserved for BASIC interpreter  0000:0000  Unused              
+           D6  Reserved for BASIC interpreter  0000:0000  Unused              
+           D7  Reserved for BASIC interpreter  0000:0000  Unused              
+           D8  Reserved for BASIC interpreter  0000:0000  Unused              
+           D9  Reserved for BASIC interpreter  0000:0000  Unused              
+           DA  Reserved for BASIC interpreter  9600:0000  DOS System Area     
+           DB  Reserved for BASIC interpreter  C900:0100  DOS System Area     
+           DC  Reserved for BASIC interpreter  0002:4C02  DOS System Area     
+           DD  Reserved for BASIC interpreter  5900:0000  DOS System Area     
+           DE  Reserved for BASIC interpreter  070E:0600  DOS System Area     
+           DF  Reserved for BASIC interpreter  F633:EE1F  DOS System Area     
+           E0  Reserved for BASIC interpreter  AA55:3DAD  DOS System Area     
+           E1  Reserved for BASIC interpreter  D233:1875  DOS System Area     
+           E2  Reserved for BASIC interpreter  3308:00B9  DOS System Area     
+           E3  Reserved for BASIC interpreter  08B9:51F6  DOS System Area     
+           E4  Reserved for BASIC interpreter  E8A5:F300  BIOS                
+           E5  Reserved for BASIC interpreter  E259:0018  BIOS                
+           E6  Reserved for BASIC interpreter  045D:0BF4  DOS System Area     
+           E7  Reserved for BASIC interpreter  3282:1001  DOS System Area     
+           E8  Reserved for BASIC interpreter  0010:045D  Device Driver       
+           E9  Reserved for BASIC interpreter  77A4:C000  DOS System Area     
+           EA  Reserved for BASIC interpreter  9101:00D6  DOS System Area     
+           EB  Reserved for BASIC interpreter  F000:E860  BIOS                
+           EC  Reserved for BASIC interpreter  9101:00D6  DOS System Area     
+           ED  Reserved for BASIC interpreter  F000:E860  BIOS                
+           EE  Reserved for BASIC interpreter  00D6:3286  DOS System Area     
+           EF  Reserved for BASIC interpreter  9100:00D6  DOS System Area     
+           F0  Reserved for BASIC interpreter  F000:E860  BIOS                
+           F1  Reserved for User Programs      0020:3246  EMM386              
+           F2  Reserved for User Programs      00E6:E924  DOS System Area     
+           F3  Reserved for User Programs      1CE0:9100  DOS System Area     
+           F4  Reserved for User Programs      7046:9D43  DOS System Area     
+           F5  Reserved for User Programs      0000:07C0  Unknown             
+           F6  Reserved for User Programs      07C0:026B  DOS System Area     
+           F7  Reserved for User Programs      09CF:0001  DOS System Area     
+           F8  Reserved for User Programs      07C0:0048  DOS System Area     
+           F9  Reserved for User Programs      8000:06D8  DOS System Area     
+           FA  Reserved for User Programs      43A0:0012  DOS System Area     
+           FB  Reserved for User Programs      0001:0080  DOS                 
+           FC  Reserved for User Programs      0001:7C00  DOS System Area     
+           FD  Reserved for User Programs      0040:0000  Device Driver       
+           FE  Reserved for User Programs      7EAE:052A  DOS System Area     
+           FF  Reserved for User Programs      7246:0000  DOS System Area     
 
 
                                *******************
@@ -127,7 +391,7 @@
            B:  1.2M, 5 1/4"   1.2M                                             
            C:  Device Driven  ?      C:\DOSBENCH\MARKS\SI8                     
            D:  Device Driven  ?      D:\                                       
-           E:  CD ROM                E:\                                       
+           E:  Network               E:\                                       
            F:  Available                                                       
            G:  Available                                                       
            H:  Available                                                       
@@ -151,20 +415,46 @@
            Z:  Available                                                       
 
 
+                          ****************************
+                          *   Disk Characteristics   *
+                          ****************************
+
+              --------------------- Drive A: ---------------------
+                                No disk in drive
+                             No physical information
+
+
+              --------------------- Drive B: ---------------------
+                                No disk in drive
+                             No physical information
+
+
+              --------------------- Drive C: ---------------------
+                                No disk in drive
+                             No physical information
+
+
+              --------------------- Drive D: ---------------------
+                                No disk in drive
+                             No physical information
+
+
+
+
                              **********************
                              *   Memory Summary   *
                              **********************
 
-              --------------------- DOS Usage ---------------------
+              --------------------- DOS U-age ---------------------
              DOS reports 626 K-bytes of memory:
-                 66 K-bytes used by DOS and resident programs
-                560 K-bytes available for application programs
+                 42 K-bytes used by DOS and resident programs
+                584 K-bytes available for application programs
 
                --------------------- Overall ---------------------
              A search for active memory finds:
                 640 K-bytes main memory      (at hex 00000-0A000)
                  32 K-bytes display memory   (at hex 0B800-0C000)
-                 64 K-bytes extra memory     (at hex 0D000-0E000)
+                 96 K-bytes extra memory     (at hex 0C800-0E000)
              19,712 K-bytes extended memory  (at hex 10000-144000)
              20,000 K-bytes expanded memory
 
@@ -180,17 +470,17 @@
            
               Total EMS Memory:    20,000K
             Reserved by System:  -   368K
-                     Allocated:  -   272K
+                     Allocated:  -   288K
                                  --------
-                     Available:  = 19,360K
+                     Available:  = 19,344K
            
                     Page Frame:  E000
                 Mappable Pages:  39
            
                              Total    Free
                    Handles:    64       63
-                 Raw Pages:  1,250     1,210
-            Standard Pages:  1,250     1,210
+                 Raw Pages:  1,250     1,209
+            Standard Pages:  1,250     1,209
            
           Handle  Pages   Size    Name
             0       23     368K   System  
@@ -201,9 +491,9 @@
                            ***************************
 
               Total XMS Memory:    19,648K
-                     Allocated:  -   528K
+                     Allocated:  -   544K
                                  --------
-                     Available:  = 19,120K
+                     Available:  = 19,104K
            
                    XMS Version:  3.00
                Driver Revision:  3.5F
@@ -213,12 +503,12 @@
                       A20 Line:  Enabled 
            
                     UMB Server:   DOS
-                Available UMBs:     36K
-              Largest Free UMB:     22K
+                Available UMBs:      5K
+              Largest Free UMB:      5K
 
           Handle   Block       Size  Locks
           54,398       0         4K    1  
-          54,408       1       524K    0  
+          54,408       1       540K    0  
 
 
                             *************************
@@ -230,15 +520,30 @@
            0365      544  Unknown owner          Unknown                      
            0388      512  DOS                    File Buffers                 
            03A9       64  DOS                    DOS System Area              
-           03AE       64                         Free Memory                  
-           03B3   24,576  MOUSE                  Program                      
-           09B4   28,016  MSCDEX                 Program                      
-           108C       80  COMMAND                Data                         
-           1092  574,144                         Free Memory                  
+           03AE       64  COMMAND                Data                         
+           03B3      256  WIN                    Environment                  
+           03C4    2,016  WIN                    Device Driver                
+           0443       96                         Free Memory                  
+           044A   25,408  MOUSE                  Program                      
+           0A7F  599,024                         Free Memory                  
            9CBF  182,720  DOS                    DOS System Area              
-           C95C   23,056                         Free Memory                  
-           CEFF    4,096  Unknown owner          Data                         
-           D000   65,520  UMB                    Data                         
+           C95D    5,008  VIDE-CDD               Device Driver                
+           CA97   11,888  MVSOUND                Device Driver                
+           CD7F    2,848  IFSHLP                 Device Driver                
+           CE32      816  SETVER                 Device Driver                
+           CE66      608                         Unknown                      
+           CE8D    1,488  DOS                    Open Files Table             
+           CEEB      256  DOS                    File Control Blocks          
+           CEFC   16,080  DOS                    File Buffers                 
+           D2EA    2,816  DOS                    Current Directories          
+           D39B    3,072  DOS                    Stacks                       
+           D45C    5,712  COMMAND                Program                      
+           D5C2    1,424  COMMAND                Environment                  
+           D61C    5,520  COMMAND                Program                      
+           D776    1,424  COMMAND                Environment                  
+           D7D0      304                         Free Memory                  
+           D7E4   28,016  MSCDEX                 Program                      
+           DEBC    5,168                         Free Memory                  
 
 
                               ********************
@@ -247,8 +552,10 @@
 
           Address   Size  Owner                Hooked Interrupt Vectors
           -------------------------------------------------------------------
-           03B4   24,576  MOUSE                08 0B 10 33 DC DE DF E6 EE ... 
-           09B5   28,016  MSCDEX               2F E3 F2 F7 
+           044B   25,408  MOUSE                08 0C 10 33 DC DE DF E6 F6 ... 
+           D45D    7,136  COMMAND              
+           D61D    6,944  COMMAND              22 24 2E 30 
+           D7E5   28,016  MSCDEX               
 
 
                              **********************
@@ -258,10 +565,10 @@
              Address   Name      Description
           -------------------------------------------------------------
            00C9:0048  NUL       NUL Device                                     
-           D4D8:0000  SETVERXX  MSDOS Version Number Driver                    
-           D425:0000  IFS$HLP$  WfW VFAT driver                                
-           D13D:0000  MVPROAS   Unrecognized Device                            
-           D003:0000  MSCD001   Unrecognized Device                            
+           CE33:0000  SETVERXX  MSDOS Version Number Driver                    
+           CD80:0000  IFS$HLP$  WfW VFAT driver                                
+           CA98:0000  MVPROAS   Unrecognized Device                            
+           C95E:0000  MSCD001   Unrecognized Device                            
            0258:0000  EMMXXXX0  Expanded Memory Manager (EMS)                  
            020F:0000  XMSXXXX0  Extended Memory Manager (XMS)                  
            0071:0006  CON       Console Keyboard/Screen                        
