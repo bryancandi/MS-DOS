@@ -1,7 +1,7 @@
                                System Information
                               Norton Utilities 8.0
                                   System Report
-                         Thursday, July  3, 2025 8:19am
+                         Thursday, July  3, 2025 8:43am
                                Bryan's ACT 486 DX2
 
                              **********************
@@ -28,7 +28,7 @@
              --------------------- Other Info ---------------------
                     Bus Type: ISA (PC/AT)
                 Serial Ports: 2
-              Parallel Ports: 3
+              Parallel Ports: 1
                Keyboard Type: 101-Key
             Operating System: DOS 7.10
           
@@ -64,14 +64,14 @@
 
             Number   Address   Name                       Owner
                                                                        
-           IRQ 00  045B:2C7F  Timer Output 0             DOS System Area      
-           IRQ 01  D39C:0028  Keyboard                   DOS System Area      
+           IRQ 00  0466:2C7F  Timer Output 0             DOS System Area      
+           IRQ 01  03D7:0258  Keyboard                   DOS System Area      
            IRQ 02  D39C:003A  [Cascade]                  DOS System Area      
            IRQ 03  D39C:0052  COM2                       DOS System Area      
-           IRQ 04  0958:0114  COM1                       DOS System Area      
+           IRQ 04  0963:0114  COM1                       DOS System Area      
            IRQ 05  D39C:0082  LPT2                       DOS System Area      
-           IRQ 06  D39C:009A  Floppy Disk                DOS System Area      
-           IRQ 07  0070:0465  LPT1                       Unknown              
+           IRQ 06  03D7:038C  Floppy Disk                DOS System Area      
+           IRQ 07  03D7:0398  LPT1                       DOS System Area      
            IRQ 08  D39C:0035  Realtime Clock             DOS System Area      
            IRQ 09  F000:EED2  Reserved                   BIOS                 
            IRQ 10  D39C:00B2  Reserved                   DOS System Area      
@@ -90,24 +90,24 @@
                                                                        
            00  Divide by Zero                  00C9:0F9E  DOS System Area     
            01  Single Step                     0070:0465  Unknown             
-           02  Nonmaskable                     0AA2:26D2  DOS System Area     
+           02  Nonmaskable                     0A9B:26D2  DOS System Area     
            03  Breakpoint                      0070:0465  Unknown             
            04  Overflow                        0070:0465  Unknown             
            05  Print Screen                    F000:FF54  BIOS                
            06  Invalid Opcode                  F000:EB43  BIOS                
            07  Reserved                        F000:EAEB  BIOS                
-           08  IRQ0 - System Timer             045B:2C7F  DOS System Area     
-           09  IRQ1 - Keyboard                 D39C:0028  DOS System Area     
+           08  IRQ0 - System Timer             0466:2C7F  DOS System Area     
+           09  IRQ1 - Keyboard                 03D7:0258  DOS System Area     
            0A  IRQ2 - Reserved                 D39C:003A  DOS System Area     
            0B  IRQ3 - COM2                     D39C:0052  DOS System Area     
-           0C  IRQ4 - COM1                     0958:0114  DOS System Area     
+           0C  IRQ4 - COM1                     0963:0114  DOS System Area     
            0D  IRQ5 - Reserved                 D39C:0082  DOS System Area     
-           0E  IRQ6 - Diskette                 D39C:009A  DOS System Area     
-           0F  IRQ7 - Printer                  0070:0465  Unknown             
-           10  Video                           045B:25EB  DOS System Area     
+           0E  IRQ6 - Diskette                 03D7:038C  DOS System Area     
+           0F  IRQ7 - Printer                  03D7:0398  DOS System Area     
+           10  Video                           0466:25EB  DOS System Area     
            11  Equipment Determination         F000:F84D  BIOS                
            12  Memory Size Determination       F000:F841  BIOS                
-           13  Fixed Disk/Diskette             03C5:042A  DOS System Area     
+           13  Fixed Disk/Diskette             03D7:03A4  DOS System Area     
            14  Asynchronous Communication      F000:E739  BIOS                
            15  System Services                 0258:053A  EMM386              
            16  Keyboard                        0070:042D  Unknown             
@@ -121,35 +121,35 @@
            1E  Diskette Parameters             0000:0522  Device Driver       
            1F  Video Graphics Characters       C000:5494  DOS System Area     
            20  Program Terminate               00C9:0FA8  DOS System Area     
-           21  General DOS Functions           03C5:042F  DOS System Area     
-           22  Terminate Address               D61D:0314  COMMAND             
-           23  Ctrl+Break Handler Address      0AA2:26BA  DOS System Area     
-           24  Critical Error Handler          D61D:0178  COMMAND             
-           25  Absolute Disk Read              00C9:0FBC  DOS System Area     
-           26  Absolute Disk Write             00C9:0FC6  DOS System Area     
+           21  General DOS Functions           041B:031F  DOS System Area     
+           22  Terminate Address               D45D:0314  COMMAND             
+           23  Ctrl+Break Handler Address      0A9B:26BA  DOS System Area     
+           24  Critical Error Handler          D45D:0178  COMMAND             
+           25  Absolute Disk Read              03D7:03F2  DOS System Area     
+           26  Absolute Disk Write             03D7:03FE  DOS System Area     
            27  Terminate and Stay Resident     00C9:0FD0  DOS System Area     
-           28  DOS Idle                        00C9:106C  DOS System Area     
+           28  DOS Idle                        041B:0218  DOS System Area     
            29  DOS Internal - FAST PUTCHAR     0070:0466  Unknown             
            2A  Microsoft Networks              00C9:106C  DOS System Area     
            2B  Reserved for DOS                00C9:106C  DOS System Area     
            2C  Reserved for DOS                00C9:106C  DOS System Area     
            2D  Reserved for DOS                00C9:106C  DOS System Area     
-           2E  DOS - Execute Command           D61D:0162  COMMAND             
-           2F  Multiplex (Process Interface)   03C5:03F6  DOS System Area     
-           30  Reserved for DOS                C90F:E4EA  COMMAND             
+           2E  DOS - Execute Command           D45D:0162  COMMAND             
+           2F  Multiplex (Process Interface)   09BE:00CF  DOS System Area     
+           30  Reserved for DOS                C90F:E4EA  MSCDEX              
            31  Reserved for DOS                F000:EA00  BIOS                
            32  Reserved for DOS                00C9:106C  DOS System Area     
-           33  Microsoft Mouse Driver          045B:09EA  DOS System Area     
-           34  Reserved for DOS                0AA2:0833  DOS System Area     
-           35  Reserved for DOS                0AA2:0833  DOS System Area     
-           36  Reserved for DOS                0AA2:0833  DOS System Area     
-           37  Reserved for DOS                0AA2:0833  DOS System Area     
-           38  Reserved for DOS                0AA2:0833  DOS System Area     
-          e39  Reserved for DOS                0AA2:0833  DOS System Area     
-           3A  Reserved for DOS                0AA2:0833  DOS System Area     
-           3B  Reserved for DOS                0AA2:0833  DOS System Area     
-           3C  Reserved for DOS                0AA2:07FE  DOS System Area     
-           3D  Reserved for DOS                0AA2:082B  DOS System Area     
+           33  Microsoft Mouse Driver          0466:09EA  DOS System Area     
+           34  Reserved for DOS                0A9B:0833  DOS System Area     
+           35  Reserved for DOS                0A9B:0833  DOS System Area     
+           36  Reserved for DOS                0A9B:0833  DOS System Area     
+           37  Reserved for DOS                0A9B:0833  DOS System Area     
+           38  Reserved for DOS                0A9B:0833  DOS System Area     
+           39  Reserved for DOS                0A9B:0833  DOS System Area     
+           3A  Reserved for DOS                0A9B:0833  DOS System Area     
+           3B  Reserved for DOS                0A9B:0833  DOS System Area     
+           3C  Reserved for DOS                0A9B:07FE  DOS System Area     
+           3D  Reserved for DOS                0A9B:082B  DOS System Area     
            3E  Reserved for DOS                00C9:106C  DOS System Area     
            3F  Overlay Manager                 00C9:106C  DOS System Area     
            40  Diskette BIOS Revector          F000:EC59  BIOS                
@@ -325,8 +325,8 @@
            EA  Reserved for BASIC interpreter  9101:00D6  DOS System Area     
            EB  Reserved for BASIC interpreter  F000:E860  BIOS                
            EC  Reserved for BASIC interpreter  9101:00D6  DOS System Area     
-           ED  Reserved for BASIC interpreter  F000:E860  BIOS                
-           EE  Reserved for BASIC interpreter  00D6:3286  DOS System Area     
+           ED  Reserved for BASIC interpreter  ED30:E860  BIOS                
+           EE  Reserved for BASIC interpreter  00D6:F000  DOS System Area     
            EF  Reserved for BASIC interpreter  9100:00D6  DOS System Area     
            F0  Reserved for BASIC interpreter  F000:E860  BIOS                
            F1  Reserved for User Programs      0020:3246  EMM386              
@@ -391,7 +391,7 @@
            B:  1.2M, 5 1/4"   1.2M                                             
            C:  Device Driven  ?      C:\DOSBENCH\MARKS\SI8                     
            D:  Device Driven  ?      D:\                                       
-           E:  Network               E:\                                       
+           E:  CD ROM                E:\                                       
            F:  Available                                                       
            G:  Available                                                       
            H:  Available                                                       
@@ -445,7 +445,7 @@
                              *   Memory Summary   *
                              **********************
 
-              --------------------- DOS U-age ---------------------
+              --------------------- DOS Usage ---------------------
              DOS reports 626 K-bytes of memory:
                  42 K-bytes used by DOS and resident programs
                 584 K-bytes available for application programs
@@ -454,7 +454,7 @@
              A search for active memory finds:
                 640 K-bytes main memory      (at hex 00000-0A000)
                  32 K-bytes display memory   (at hex 0B800-0C000)
-                 96 K-bytes extra memory     (at hex 0C800-0E000)
+                112 K-bytes extra memory     (at hex 0C800-0E400)
              19,712 K-bytes extended memory  (at hex 10000-144000)
              20,000 K-bytes expanded memory
 
@@ -470,20 +470,22 @@
            
               Total EMS Memory:    20,000K
             Reserved by System:  -   368K
-                     Allocated:  -   288K
+                     Allocated:  - 1,184K
                                  --------
-                     Available:  = 19,344K
+                     Available:  = 18,448K
            
                     Page Frame:  E000
                 Mappable Pages:  39
            
                              Total    Free
-                   Handles:    64       63
-                 Raw Pages:  1,250     1,209
-            Standard Pages:  1,250     1,209
+                   Handles:    64       61
+                 Raw Pages:  1,250     1,153
+            Standard Pages:  1,250     1,153
            
           Handle  Pages   Size    Name
             0       23     368K   System  
+            1        1      16K   None    
+            2       55     880K   None    
 
 
                            ***************************
@@ -491,24 +493,25 @@
                            ***************************
 
               Total XMS Memory:    19,648K
-                     Allocated:  -   544K
+                     Allocated:  - 1,188K
                                  --------
-                     Available:  = 19,104K
+                     Available:  = 18,460K
            
                    XMS Version:  3.00
                Driver Revision:  3.5F
-             Available Handles:  46
+             Available Handles:  45
            
               High Memory Area:  Allocated
                       A20 Line:  Enabled 
            
                     UMB Server:   DOS
-                Available UMBs:      5K
-              Largest Free UMB:      5K
+                Available UMBs:     12K
+              Largest Free UMB:     11K
 
           Handle   Block       Size  Locks
           54,398       0         4K    1  
           54,408       1       540K    0  
+          54,418       2       644K    1  
 
 
                             *************************
@@ -520,12 +523,10 @@
            0365      544  Unknown owner          Unknown                      
            0388      512  DOS                    File Buffers                 
            03A9       64  DOS                    DOS System Area              
-           03AE       64  COMMAND                Data                         
-           03B3      256  WIN                    Environment                  
-           03C4    2,016  WIN                    Device Driver                
-           0443       96                         Free Memory                  
-           044A   25,408  MOUSE                  Program                      
-           0A7F  599,024                         Free Memory                  
+           03AE      368                         Free Memory                  
+           03C6    2,272  ADTSR                  Program                      
+           0455   25,408  MOUSE                  Program                      
+           0A8A  598,848                         Free Memory                  
            9CBF  182,720  DOS                    DOS System Area              
            C95D    5,008  VIDE-CDD               Device Driver                
            CA97   11,888  MVSOUND                Device Driver                
@@ -539,11 +540,9 @@
            D39B    3,072  DOS                    Stacks                       
            D45C    5,712  COMMAND                Program                      
            D5C2    1,424  COMMAND                Environment                  
-           D61C    5,520  COMMAND                Program                      
-           D776    1,424  COMMAND                Environment                  
-           D7D0      304                         Free Memory                  
-           D7E4   28,016  MSCDEX                 Program                      
-           DEBC    5,168                         Free Memory                  
+           D61C      320                         Free Memory                  
+           D631   28,016  MSCDEX                 Program                      
+           DD09   12,128                         Free Memory                  
 
 
                               ********************
@@ -552,10 +551,10 @@
 
           Address   Size  Owner                Hooked Interrupt Vectors
           -------------------------------------------------------------------
-           044B   25,408  MOUSE                08 0C 10 33 DC DE DF E6 F6 ... 
-           D45D    7,136  COMMAND              
-           D61D    6,944  COMMAND              22 24 2E 30 
-           D7E5   28,016  MSCDEX               
+           03C7    2,272  ADTSR                09 0E 0F 13 21 25 26 28 
+           0456   25,408  MOUSE                08 0C 10 2F 33 DC DE DF E6 ... 
+           D45D    7,136  COMMAND              22 24 2E 
+           D632   28,016  MSCDEX               30 
 
 
                              **********************
